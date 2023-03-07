@@ -1,0 +1,33 @@
+alert("Que operacion desea realizar?");
+
+let operacionUsuario =prompt(" 1- Suma \n 2- Resta \n 3- Multiplicacion \n 4- Division");
+
+
+switch (operacionUsuario) {
+    case "1":
+        numero1= parseInt(prompt("Ingresar primer numero"));
+        numero2= parseInt(prompt("Ingresar segundo numero"));
+        resultadoOperacion= numero1 + numero2;
+        document.write(resultadoOperacion);
+        break;
+    case "2":
+        numero1= parseInt(prompt("Ingresar primer numero"));
+        numero2= parseInt(prompt("Ingresar segundo numero"));    
+        resultadoOperacion= numero1 - numero2;
+        document.write(resultadoOperacion);
+        break;
+    case "3":
+        numero1= parseInt(prompt("Ingresar primer numero"));
+        numero2= parseInt(prompt("Ingresar segundo numero"));    
+        resultadoOperacion= numero1 * numero2;
+        document.write(resultadoOperacion);
+        break;
+    case "4":
+        numero1= parseInt(prompt("Ingresar primer numero"));
+        numero2= parseInt(prompt("Ingresar segundo numero"));    
+        resultadoOperacion= numero1 / numero2;
+        document.write(resultadoOperacion);
+        break;
+    default:
+        alert("Ingresar una opcion valida");
+}
